@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
 <suite name="All Test Suite">
+    <listeners><listener class-name="TestListerner"></listener></listeners>
     <test verbose="2" preserve-order="true"  name="DataProviderTest1">
        <parameter name="browser" value="chrome"></parameter>
        <parameter name="url" value="https://amazon.com"></parameter>
