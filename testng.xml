@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"  name="DataProviderTest1">
+       <parameter name="browser" value="chrome"></parameter>
+       <parameter name="url" value="https://amazon.com"></parameter>
+        <classes>
+            <class name="ParameterTest">
+                <methods>
+                    <include name="testParameter1">
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true"  name="DataProviderTest2">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="url" value="https://flipkart.com"></parameter>
+        <classes>
+            <class name="ParameterTest">
+                <methods>
+                    <include name="testParameter2">
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
